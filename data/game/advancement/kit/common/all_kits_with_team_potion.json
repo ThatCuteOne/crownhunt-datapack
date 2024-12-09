@@ -6,7 +6,7 @@
 		  "minecraft:potion_contents": {
 			"custom_color": 11862673
 		  },
-		  "minecraft:custom_model_data": 101
+				"minecraft:item_model": "game:ktis/speedster"
 		}
 	  },
 	  "title": "Bro code",

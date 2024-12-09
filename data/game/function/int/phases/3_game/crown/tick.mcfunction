@@ -5,4 +5,4 @@ execute as @a[tag=has_star] run tp @e[tag=star.death_summon] @s
 
 execute if entity @a[team=Blue,tag=has_star] run function game:int/phases/3_game/crown/scores {team:"blue"}
 execute if entity @a[team=Red,tag=has_star] run function game:int/phases/3_game/crown/scores {team:"red"}
-execute unless entity @e[tag=has_star] unless entity @e[tag=star] as @e[tag=star.death_summon] at @s run summon item ~ ~ ~ {Age:-32768,NoGravity:1b,Glowing:1b,Health:255,Invulnerable:1b,Tags:["star"],Item:{id:"minecraft:carved_pumpkin",count:1,components:{"minecraft:custom_name":'{"color":"gold","italic":false,"text":"Crown of Time"}',"minecraft:custom_model_data":200,"minecraft:custom_data":{star:1b}}}}
+execute unless entity @e[tag=has_star] unless entity @e[tag=star] as @e[tag=star.death_summon] at @s run summon item ~ ~ ~ {Age:-32768,NoGravity:1b,Glowing:1b,Health:255,Invulnerable:1b,Tags:["star"],Item:{id:"minecraft:carved_pumpkin",count:1,components:{"minecraft:custom_name":'{"color":"gold","italic":false,"text":"Crown of Time"}',"item_model":"game:crown/star_crown","minecraft:custom_data":{star:1b}}}}

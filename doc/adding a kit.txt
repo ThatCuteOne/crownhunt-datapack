@@ -1,0 +1,38 @@
+
+
+
+
+
+Step 1 - saving -
+Put the items you want to save in your Inventory
+
+to save the current Inventory run this command in chat
+IMPORTANT REPLACE KITNAME WITH THE NAME OF YOUR KIT
+/function turns:player/save/save_inventory {kit:"KITNAME"}
+after that clear your Inventory
+
+
+Now check if everything saved correctly by running this command
+IMPORTANT REPLACE KITNAME WITH THE NAME OF YOUR KIT
+function turns:player/load/pre_load_data {kit:"KITNAME",player_id:-1}
+
+if you have done everything correctly the kit should load with all of your items
+
+
+NOTE: THIS IS OLD DOES NOT WORK ANYMORE
+
+Step 2 - implementing the Kit -
+To implement the kit into the game you need to open the datapack located in your worlds Folder
+open data\game\functions\int\gamestart\summon_kit_entity.mcfunction
+Now copy this command in to the file OLD
+X2 IMPORTANT REPLACE KITNAME WITH THE NAME OF YOUR KIT
+summon armor_stand 0 0 0 {Tags:["kit.selector"],NoGravity:1b,Invulnerable:1b,Invisible:1b,ArmorItems:[{},{},{},{id:"minecraft:carrot_on_a_stick",Count:1b,tag:{display:{Name:'{"text":"KITNAME","color":"green","italic":false}'},CustomModelData:115,kit:"KITNAME"}}]}
+
+
+the last things you need to do are
+open data\game\functions\int\remove_game_tags.mcfunction
+now paste this command in the file
+IMPORTANT REPLACE KITNAME WITH THE NAME OF YOUR KIT
+tag @s remove KITNAME
+
+note: if you want to change an existing kit do only step 1

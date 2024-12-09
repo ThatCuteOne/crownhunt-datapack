@@ -1,0 +1,21 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:elytra"
+		},
+		"title": "Olympians",
+		"description": "Form a team with movement kits only",
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true
+	},
+	"parent": "game:kit/common/all_tank",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"rewards": {
+		"function": "game:levels/common_advancement"
+	}
+}

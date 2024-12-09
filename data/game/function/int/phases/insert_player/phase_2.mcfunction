@@ -1,0 +1,1 @@
+function game:int/phases/2_kit_selection/on_player

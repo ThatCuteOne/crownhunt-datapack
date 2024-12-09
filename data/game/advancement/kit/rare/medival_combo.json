@@ -1,0 +1,21 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:chainmail_chestplate"
+      },
+      "title": "Medival Combo",
+      "description": "Form a Team with Archer and Knight",
+      "frame": "goal"
+
+    },
+    "parent": "game:kit/common/get_killed_as_midas",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "game:levels/rare_advancement"
+    }
+  }
+  

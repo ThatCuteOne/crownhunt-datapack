@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:respawn_anchor"
+      },
+      "title": "It lagged right?..",
+      "description": "Die 50 times",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "game:general/common/die_15",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "game:levels/common_advancement"
+    }
+  }
+  

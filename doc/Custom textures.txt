@@ -1,0 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+CustomModelDatas
+
+
+Speedster =     101
+Knight =        102
+Assasine =      103
+Crossbowmen =   104
+Midas =         105
+Alchemist =     106
+Tank =          107
+Archer =        108
+Acrobat =       109
+Wither =        111
+Officer =       112
+Creepermaster = 113
+Poseidon =      114

@@ -1,0 +1,119 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:bundle"
+      },
+      "title": "Fully Kitted Out",
+      "description": "Play with every Kit once",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "game:kit/root",
+    "criteria": {
+      "Archer": {
+        "trigger": "minecraft:impossible"
+      },
+      "Crossbow": {
+        "trigger": "minecraft:impossible"
+      },
+      "Acrobat": {
+        "trigger": "minecraft:impossible"
+      },
+      "Speedster": {
+        "trigger": "minecraft:impossible"
+      },
+      "Wither": {
+        "trigger": "minecraft:impossible"
+      },
+      "Tank": {
+        "trigger": "minecraft:impossible"
+      },
+      "Knight": {
+        "trigger": "minecraft:impossible"
+      },
+      "Midas": {
+        "trigger": "minecraft:impossible"
+      },
+      "Assasin": {
+        "trigger": "minecraft:impossible"
+      },
+      "Viking": {
+        "trigger": "minecraft:impossible"
+      },
+      "Creepermaster": {
+        "trigger": "minecraft:impossible"
+      },
+      "Poseidon": {
+        "trigger": "minecraft:impossible"
+      },
+      "Angel": {
+        "trigger": "minecraft:impossible"
+      },
+      "Officer": {
+        "trigger": "minecraft:impossible"
+      },
+      "Alchemist": {
+        "trigger": "minecraft:impossible"
+      },
+      "Medic": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "requirements": [
+      [
+        "Archer"
+      ],
+      [
+        "Crossbow"
+      ],
+      [
+        "Acrobat"
+      ],
+      [
+        "Speedster"
+      ],
+      [
+        "Wither"
+      ],
+      [
+        "Tank"
+      ],
+      [
+        "Knight"
+      ],
+      [
+        "Midas"
+      ],
+      [
+        "Assasin"
+      ],
+      [
+        "Viking"
+      ],
+      [
+        "Creepermaster"
+      ],
+      [
+        "Poseidon"
+      ],
+      [
+        "Angel"
+      ],
+      [
+        "Officer"
+      ],
+      [
+        "Alchemist"
+      ],
+      [
+        "Medic"
+      ]
+    ],
+    "rewards": {
+      "function": "game:levels/rare_advancement"
+    },
+    "sends_telemetry_event": false
+  }
+  

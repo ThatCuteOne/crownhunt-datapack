@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:wither_rose"
+      },
+      "title": "Epidemic",
+      "description": "Wither both of your Enemies as Wither",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "game:kit/common/immediate_tank_death",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "game:levels/rare_advancement"
+    }
+  }
+  

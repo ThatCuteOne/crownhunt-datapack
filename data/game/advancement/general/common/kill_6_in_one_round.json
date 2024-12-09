@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:iron_axe"
+      },
+      "title": "Slaughter",
+      "description": "Get 6 kills in one round",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "game:general/common/kill_4_in_one_round",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "game:levels/common_advancement"
+    }
+  }
+  

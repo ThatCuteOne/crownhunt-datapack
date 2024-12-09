@@ -1,0 +1,17 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:effects_changed",
+        "conditions": {
+          "player": {},
+          "effects": {
+            "minecraft:wither": {}
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "game:int/advancements/kit/effects_changed.wither"
+    }
+  }
+  

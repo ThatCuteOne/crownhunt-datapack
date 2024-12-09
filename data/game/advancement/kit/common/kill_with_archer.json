@@ -1,0 +1,54 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:bow"
+		},
+		"title": "Take Aim",
+		"description": "Kill someone with the Archer's Bow",
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "game:kit/root",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"kit.id": 0
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"nbt": "{Tags:[\"game.in_game\"]}"
+								}
+							}
+						]
+					}
+				],
+				"killing_blow": {
+					"tags": [
+						{
+							"id": "minecraft:is_projectile",
+							"expected": true
+						}
+					]
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "game:levels/common_advancement"
+	},
+	"sends_telemetry_event": false
+}

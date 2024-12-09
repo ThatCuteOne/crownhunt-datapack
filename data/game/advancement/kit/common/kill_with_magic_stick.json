@@ -1,0 +1,55 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:stick",
+			"components": {
+				"minecraft:enchantment_glint_override": true
+			}
+		},
+		"title": "Vanishing Spell",
+		"description": "Kill someone with the Alchemist's Magic Stick",
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "game:kit/common/officer_kills_with_taser",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"kit.id": 13
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"nbt": "{Tags:[\"game.in_game\"]}",
+									"equipment": {
+										"mainhand": {
+											"items": "minecraft:stick"
+										}
+									}
+								}
+							}
+						]
+					}
+				],
+				"killing_blow": {}
+			}
+		}
+	},
+	"rewards": {
+		"function": "game:levels/common_advancement"
+	},
+	"sends_telemetry_event": false
+}

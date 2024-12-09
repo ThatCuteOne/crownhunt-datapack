@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:sniffer_egg"
+      },
+      "title": "Isnt that a well ROUNDed joke",
+      "description": "Win 1500 rounds",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "game:general/rare/win_500_rounds",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "game:levels/epic_advancement"
+    }
+  }
+  

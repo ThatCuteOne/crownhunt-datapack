@@ -1,0 +1,4 @@
+item replace entity @s hotbar.7 with carrot_on_a_stick[custom_data={navigator:{}},custom_name='{"color":"red","italic":false,"text":"Disabled during Active Game","font":"game:small_caps"}',custom_model_data=3105]
+item replace entity @s hotbar.6 with carrot_on_a_stick[custom_data={navigator:{}},custom_name='{"color":"red","italic":false,"text":"Disabled during Active Game","font":"game:small_caps"}',custom_model_data=2000]
+item replace entity @s hotbar.4 with carrot_on_a_stick[custom_data={navigator:{action:{page:110}}},custom_name='{"color":"red","italic":false,"text":"Join Current Game","font":"game:small_caps"}',custom_model_data=100402]
+item replace entity @s hotbar.5 with carrot_on_a_stick[custom_data={navigator:{}},custom_name='{"color":"red","italic":false,"text":"Disabled during Active Game","font":"game:small_caps"}',custom_model_data=1005]

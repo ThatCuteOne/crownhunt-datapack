@@ -1,0 +1,73 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:arrow"
+		},
+		"title": "Sniper Duel",
+		"description": "Kill Another Archer from more than 15 Blocks away",
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "game:kit/common/kill_with_archer",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"kit.id": 0
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"nbt": "{Tags:[\"game.in_game\"]}"
+								}
+							}
+						]
+					}
+				],
+				"entity": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"kit.id": 0
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"nbt": "{Tags:[\"game.in_game\"]}",
+									"distance": {
+										"horizontal": {
+											"min": 15,
+											"max": 0
+										}
+									}
+								}
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "game:levels/rare_advancement"
+	},
+	"sends_telemetry_event": false
+}

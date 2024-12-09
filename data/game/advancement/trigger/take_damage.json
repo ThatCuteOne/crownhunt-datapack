@@ -1,0 +1,14 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "player": {
+            "nbt": "{Tags:[\"game.in_game\"]}"
+          }
+        }
+      }
+    },
+    "sends_telemetry_event": false
+  }
+  

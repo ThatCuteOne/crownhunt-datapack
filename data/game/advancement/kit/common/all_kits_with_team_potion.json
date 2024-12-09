@@ -1,0 +1,28 @@
+{
+	"display": {
+	  "icon": {
+		"id": "minecraft:potion",
+		"components": {
+		  "minecraft:potion_contents": {
+			"custom_color": 11862673
+		  },
+		  "minecraft:custom_model_data": 101
+		}
+	  },
+	  "title": "Bro code",
+	  "description": "Form a team only with kits that have a team potion",
+	  "frame": "task",
+	  "show_toast": true,
+	  "announce_to_chat": true
+	},
+	"parent": "game:kit/common/all_support",
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:impossible"
+	  }
+	},
+	"rewards": {
+	  "function": "game:levels/common_advancement"
+	}
+  }
+  

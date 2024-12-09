@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:clock"
+      },
+      "title": "Close call",
+      "description": "Win while the enemy has 1 second remaining",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "game:general/rare/not_a_sweat",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    },
+    "rewards": {
+      "function": "game:levels/rare_advancement"
+    }
+  }
+  

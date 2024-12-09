@@ -1,0 +1,31 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:player_head",
+			"components": {
+				"minecraft:profile": {
+					"properties": [
+						{
+							"name": "textures",
+							"value": "e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2Y1ZmJiMTBmNDE1ZTk0ZTAzMGQyYWI4MTFiZjRkYWYyNzRhNjI1OTNlMmE2ZTEyMzk2Mjg4M2Q4NmQxN2QxYSJ9fX0="
+						}
+					]
+				}
+			}
+		},
+		"title": "Sleepy Joe?",
+		"description": "Loose with your full time still remaining",
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true
+	},
+	"parent": "game:general/common/lose_on_all_maps",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"rewards": {
+		"function": "game:levels/rare_advancement"
+	}
+}

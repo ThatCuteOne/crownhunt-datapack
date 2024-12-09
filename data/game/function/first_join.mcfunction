@@ -1,0 +1,1 @@
+function game:int/lobby/reset_player

@@ -1,0 +1,24 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:arrow"
+      },
+      "title": "Headstart",
+      "description": "Kill two enemies within the first 15 seconds of the round",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "game:general/common/kill_50",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "game:levels/rare_advancement"
+    },
+    "sends_telemetry_event": false
+  }
+  

@@ -1,0 +1,23 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:axolotl_bucket"
+      },
+      "title": "Getting carried",
+      "description": "Win a round without moving",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "game:general/rare/pacifist",
+    "criteria": {
+      "": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "game:levels/epic_advancement"
+    }
+  }
+  

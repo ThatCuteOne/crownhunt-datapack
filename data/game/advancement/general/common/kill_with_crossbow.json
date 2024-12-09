@@ -1,0 +1,31 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:crossbow"
+      },
+      "title": "Deadly Pierce",
+      "description": "Kill an enemy with a Crossbow",
+      "frame": "task",
+      "announce_to_chat": true
+    },
+    "parent": "game:general/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:killed_by_crossbow",
+        "conditions": {
+          "player": {
+            "nbt": "{Tags:[\"game.in_game\"]}"
+          },
+          "victims": [
+            {
+              "type": "minecraft:player"
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "game:levels/common_advancement"
+    }
+  }
+  

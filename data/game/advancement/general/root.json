@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:carved_pumpkin",
+			  "components": {
+				"minecraft:custom_model_data": 200
+			}
+      },
+      "title": "Crownhunt",
+      "description": "",
+      "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+      "frame": "task",
+      "show_toast": false,
+      "announce_to_chat": false
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:tick"
+      }
+    }
+  }
+  

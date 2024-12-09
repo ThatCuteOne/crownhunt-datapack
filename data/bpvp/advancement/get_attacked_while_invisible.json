@@ -1,0 +1,19 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:entity_hurt_player",
+        "conditions": {
+          "player": {
+            "effects": {
+              "minecraft:invisibility": {}
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "bpvp:armor_invisibility/show_armor"
+    },
+    "sends_telemetry_event": false
+  }
+  

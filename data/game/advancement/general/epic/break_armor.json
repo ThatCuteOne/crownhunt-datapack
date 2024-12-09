@@ -1,0 +1,30 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:anvil"
+      },
+      "title": "Cheap Plastic",
+      "description": "Break a piece of armor",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "game:general/epic/dont_die_for_game",
+    "criteria": {
+      "a": {
+        "trigger": "minecraft:item_durability_changed",
+        "conditions": {
+          "player": {
+            "nbt": "{Tags:[\"game.in_game\"]}"
+          },
+          "durability": 0
+        }
+      }
+    },
+    "rewards": {
+      "function": "game:levels/epic_advancement"
+    },
+    "sends_telemetry_event": false
+  }
+  

@@ -1,0 +1,24 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:diamond_horse_armor"
+      },
+      "title": "Marathon IV",
+      "description": "Walk 100.000 blocks while having the crown",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": true
+    },
+    "parent": "game:general/rare/walk_50k_with_crown",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    },
+    "rewards": {
+      "function": "game:levels/epic_advancement"
+    }
+  }
+  

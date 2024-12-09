@@ -1,0 +1,32 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"player": {
+					"equipment": {
+						"mainhand": {
+							"items": [
+								"minecraft:potion"
+							],
+							"components": {
+								"minecraft:custom_data": {"use_instantly":true}
+							}
+						}
+					}
+				},
+				"item": {
+					"items": [
+						"minecraft:potion"
+					],
+					"components": {
+						"minecraft:custom_data": {"use_instantly":true}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "bpvp:instant_potions/using_potion_mainhand"
+	}
+}

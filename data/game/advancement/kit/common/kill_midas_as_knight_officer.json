@@ -1,0 +1,79 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:gold_block"
+		},
+		"title": "Coup d'état",
+		"description": "Kill King Midas as Knight or Officer",
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true
+	},
+	"parent": "game:kit/common/get_killed_as_midas",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"nbt": "{Tags:[\"game.in_game\"]}"
+								}
+							},
+							{
+								"condition": "minecraft:any_of",
+								"terms": [
+									{
+										"condition": "minecraft:entity_scores",
+										"entity": "this",
+										"scores": {
+											"kit.id": 5
+										}
+									},
+									{
+										"condition": "minecraft:entity_scores",
+										"entity": "this",
+										"scores": {
+											"kit.id": 10
+										}
+									}
+								]
+							}
+						]
+					}
+				],
+				"entity": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"kit.id": 6
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"nbt": "{Tags:[\"game.in_game\"]}"
+								}
+							}
+						]
+					}
+				]
+			}
+		}
+	},
+	"rewards": {
+		"function": "game:levels/common_advancement"
+	},
+	"sends_telemetry_event": false
+}

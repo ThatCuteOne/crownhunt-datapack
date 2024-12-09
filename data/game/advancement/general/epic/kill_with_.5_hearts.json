@@ -1,0 +1,22 @@
+{
+    "display": {
+      "icon": {
+        "id": "porkchop"
+      },
+      "title": "Not Even Close Baby",
+      "description": "Kill someone with Half a Heart left.",
+      "frame": "challenge",
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "game:general/epic/kill_with_10_hearts",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "game:levels/epic_advancement"
+    }
+  }
+  

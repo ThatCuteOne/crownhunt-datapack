@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:firework_rocket"
+    },
+    "title": "Collateral Damage",
+    "description": "Kill two Enemies in 1 second as Crossbow",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "game:kit/common/kill_with_archer",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "function": "game:levels/rare_advancement"
+  },
+  "sends_telemetry_event": false
+}

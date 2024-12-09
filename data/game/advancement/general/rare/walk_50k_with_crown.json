@@ -1,0 +1,24 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:golden_horse_armor"
+      },
+      "title": "Marathon III",
+      "description": "Walk 50.000 blocks while having the crown",
+      "frame": "goal",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "game:general/rare/walk_25k_with_crown",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible",
+        "conditions": {}
+      }
+    },
+    "rewards": {
+      "function": "game:levels/rare_advancement"
+    }
+  }
+  

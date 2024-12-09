@@ -1,0 +1,1 @@
+$execute if score gametype gamemode.settings matches 1 in game:crown/map_$(map_id) run function game:int/phases/1_loading_map/teleport

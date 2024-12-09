@@ -1,0 +1,1 @@
+$execute store result storage temp kit.$(path) int 1 run scoreboard players get @s kit.id

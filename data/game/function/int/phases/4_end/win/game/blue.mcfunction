@@ -1,0 +1,33 @@
+scoreboard players add @a[team=Blue] leaderboard.Wins 1
+title @a[tag=game.in_game] title {"text":"Blue team won the game","color":"blue"}
+title @a[team=spectator] title {"text":"Blue team won the game","color":"blue"}
+execute if score selected_map gamemode.settings matches 0 run advancement grant @a[team=Blue] only game:general/epic/win_on_all_maps 0
+execute if score selected_map gamemode.settings matches 1 run advancement grant @a[team=Blue] only game:general/epic/win_on_all_maps 1
+execute if score selected_map gamemode.settings matches 2 run advancement grant @a[team=Blue] only game:general/epic/win_on_all_maps 2
+execute if score selected_map gamemode.settings matches 3 run advancement grant @a[team=Blue] only game:general/epic/win_on_all_maps 3
+execute if score selected_map gamemode.settings matches 4 run advancement grant @a[team=Blue] only game:general/epic/win_on_all_maps 4
+execute if score selected_map gamemode.settings matches 5 run advancement grant @a[team=Blue] only game:general/epic/win_on_all_maps 5
+execute if score selected_map gamemode.settings matches 6 run advancement grant @a[team=Blue] only game:general/epic/win_on_all_maps 6
+execute if score selected_map gamemode.settings matches 7 run advancement grant @a[team=Blue] only game:general/epic/win_on_all_maps 7
+execute if score selected_map gamemode.settings matches 8 run advancement grant @a[team=Blue] only game:general/epic/win_on_all_maps 8
+execute if score selected_map gamemode.settings matches 9 run advancement grant @a[team=Blue] only game:general/epic/win_on_all_maps 9
+execute if score selected_map gamemode.settings matches 10 run advancement grant @a[team=Blue] only game:general/epic/win_on_all_maps 10
+execute if score selected_map gamemode.settings matches 11 run advancement grant @a[team=Blue] only game:general/epic/win_on_all_maps 11
+
+execute if score red_score gamemode.general matches 0 run advancement grant @a[team=Blue] only game:general/epic/win_5_to_0
+execute if score red_score gamemode.general matches 4 run advancement grant @a[team=Blue] only game:general/rare/not_a_sweat
+
+execute if score selected_map gamemode.settings matches 0 run advancement grant @a[team=Red] only game:general/common/lose_on_all_maps 0
+execute if score selected_map gamemode.settings matches 1 run advancement grant @a[team=Red] only game:general/common/lose_on_all_maps 1
+execute if score selected_map gamemode.settings matches 2 run advancement grant @a[team=Red] only game:general/common/lose_on_all_maps 2
+execute if score selected_map gamemode.settings matches 3 run advancement grant @a[team=Red] only game:general/common/lose_on_all_maps 3
+execute if score selected_map gamemode.settings matches 4 run advancement grant @a[team=Red] only game:general/common/lose_on_all_maps 4
+execute if score selected_map gamemode.settings matches 5 run advancement grant @a[team=Red] only game:general/common/lose_on_all_maps 5
+execute if score selected_map gamemode.settings matches 6 run advancement grant @a[team=Red] only game:general/common/lose_on_all_maps 6
+execute if score selected_map gamemode.settings matches 7 run advancement grant @a[team=Red] only game:general/common/lose_on_all_maps 7
+execute if score selected_map gamemode.settings matches 8 run advancement grant @a[team=Red] only game:general/common/lose_on_all_maps 8
+execute if score selected_map gamemode.settings matches 9 run advancement grant @a[team=Red] only game:general/common/lose_on_all_maps 9
+execute if score selected_map gamemode.settings matches 10 run advancement grant @a[team=Red] only game:general/common/lose_on_all_maps 10
+execute if score selected_map gamemode.settings matches 11 run advancement grant @a[team=Red] only game:general/common/lose_on_all_maps 11
+execute as @a[tag=game.in_game] at @s run function game:display/game_report
+execute as @a[team=spectator] at @s run function game:display/game_report

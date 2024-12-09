@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "nbt": "{Tags:[\"has_star\"]}"
+          }
+        }
+        ]
+      }
+    }
+  },
+  "rewards": {
+     "function": "game:int/phases/3_game/crown/killed_crown_holder"
+  }
+}

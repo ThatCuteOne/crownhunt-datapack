@@ -1,0 +1,462 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:trident"
+		},
+		"title": "Category Switcher",
+		"description": "Get ten kills with your thrown trident",
+		"frame": "challenge",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": false
+	},
+	"parent": "game:kit/common/hit_creeper_as_creepermaster",
+	"criteria": {
+		"req1": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"kit.id": 12
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"nbt": "{Tags:[\"game.in_game\"]}"
+								}
+							}
+						]
+					}
+				],
+				"entity": {
+					"type": "player"
+				},
+				"killing_blow": {
+					"tags": [
+						{
+							"id": "minecraft:is_projectile",
+							"expected": true
+						}
+					]
+				}
+			}
+		},
+    "req2": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"kit.id": 12
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"type_specific": {
+										"type": "minecraft:player",
+										"advancements": {
+											"game:kit/epic/poseidon_kill_10_ranged": {
+												"req1": true
+											}
+										}
+									},
+									"nbt": "{Tags:[\"game.in_game\"]}"
+								}
+							}
+						]
+					}
+				],
+				"entity": {
+					"type": "player"
+				},
+				"killing_blow": {
+					"tags": [
+						{
+							"id": "minecraft:is_projectile",
+							"expected": true
+						}
+					]
+				}
+			}
+		},
+    "req3": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"kit.id": 12
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"type_specific": {
+										"type": "minecraft:player",
+										"advancements": {
+											"game:kit/epic/poseidon_kill_10_ranged": {
+												"req2": true
+											}
+										}
+									},
+									"nbt": "{Tags:[\"game.in_game\"]}"
+								}
+							}
+						]
+					}
+				],
+				"entity": {
+					"type": "player"
+				},
+				"killing_blow": {
+					"tags": [
+						{
+							"id": "minecraft:is_projectile",
+							"expected": true
+						}
+					]
+				}
+			}
+		},
+    "req4": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"kit.id": 12
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"type_specific": {
+										"type": "minecraft:player",
+										"advancements": {
+											"game:kit/epic/poseidon_kill_10_ranged": {
+												"req3": true
+											}
+										}
+									},
+									"nbt": "{Tags:[\"game.in_game\"]}"
+								}
+							}
+						]
+					}
+				],
+				"entity": {
+					"type": "player"
+				},
+				"killing_blow": {
+					"tags": [
+						{
+							"id": "minecraft:is_projectile",
+							"expected": true
+						}
+					]
+				}
+			}
+		},
+    "req5": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"kit.id": 12
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"type_specific": {
+										"type": "minecraft:player",
+										"advancements": {
+											"game:kit/epic/poseidon_kill_10_ranged": {
+												"req4": true
+											}
+										}
+									},
+									"nbt": "{Tags:[\"game.in_game\"]}"
+								}
+							}
+						]
+					}
+				],
+				"entity": {
+					"type": "player"
+				},
+				"killing_blow": {
+					"tags": [
+						{
+							"id": "minecraft:is_projectile",
+							"expected": true
+						}
+					]
+				}
+			}
+		},
+    "req6": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"kit.id": 12
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"type_specific": {
+										"type": "minecraft:player",
+										"advancements": {
+											"game:kit/epic/poseidon_kill_10_ranged": {
+												"req5": true
+											}
+										}
+									},
+									"nbt": "{Tags:[\"game.in_game\"]}"
+								}
+							}
+						]
+					}
+				],
+				"entity": {
+					"type": "player"
+				},
+				"killing_blow": {
+					"tags": [
+						{
+							"id": "minecraft:is_projectile",
+							"expected": true
+						}
+					]
+				}
+			}
+		},
+    "req7": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"kit.id": 12
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"type_specific": {
+										"type": "minecraft:player",
+										"advancements": {
+											"game:kit/epic/poseidon_kill_10_ranged": {
+												"req6": true
+											}
+										}
+									},
+									"nbt": "{Tags:[\"game.in_game\"]}"
+								}
+							}
+						]
+					}
+				],
+				"entity": {
+					"type": "player"
+				},
+				"killing_blow": {
+					"tags": [
+						{
+							"id": "minecraft:is_projectile",
+							"expected": true
+						}
+					]
+				}
+			}
+		},
+    "req8": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"kit.id": 12
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"type_specific": {
+										"type": "minecraft:player",
+										"advancements": {
+											"game:kit/epic/poseidon_kill_10_ranged": {
+												"req7": true
+											}
+										}
+									},
+									"nbt": "{Tags:[\"game.in_game\"]}"
+								}
+							}
+						]
+					}
+				],
+				"entity": {
+					"type": "player"
+				},
+				"killing_blow": {
+					"tags": [
+						{
+							"id": "minecraft:is_projectile",
+							"expected": true
+						}
+					]
+				}
+			}
+		},
+    "req9": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"kit.id": 12
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"type_specific": {
+										"type": "minecraft:player",
+										"advancements": {
+											"game:kit/epic/poseidon_kill_10_ranged": {
+												"req8": true
+											}
+										}
+									},
+									"nbt": "{Tags:[\"game.in_game\"]}"
+								}
+							}
+						]
+					}
+				],
+				"entity": {
+					"type": "player"
+				},
+				"killing_blow": {
+					"tags": [
+						{
+							"id": "minecraft:is_projectile",
+							"expected": true
+						}
+					]
+				}
+			}
+		},
+    "req10": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:all_of",
+						"terms": [
+							{
+								"condition": "minecraft:entity_scores",
+								"entity": "this",
+								"scores": {
+									"kit.id": 12
+								}
+							},
+							{
+								"condition": "minecraft:entity_properties",
+								"entity": "this",
+								"predicate": {
+									"type_specific": {
+										"type": "minecraft:player",
+										"advancements": {
+											"game:kit/epic/poseidon_kill_10_ranged": {
+												"req9": true
+											}
+										}
+									},
+									"nbt": "{Tags:[\"game.in_game\"]}"
+								}
+							}
+						]
+					}
+				],
+				"entity": {
+					"type": "player"
+				},
+				"killing_blow": {
+					"tags": [
+						{
+							"id": "minecraft:is_projectile",
+							"expected": true
+						}
+					]
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "game:levels/rare_advancement"
+	},
+	"sends_telemetry_event": false
+}

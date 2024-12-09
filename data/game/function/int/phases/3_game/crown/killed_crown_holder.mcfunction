@@ -1,0 +1,2 @@
+execute if score crown_behavior_type gamemode.settings matches 3 unless entity @s[tag=death] run function game:int/phases/3_game/crown/picked_up
+advancement revoke @s only game:trigger/kill_player_with_crown

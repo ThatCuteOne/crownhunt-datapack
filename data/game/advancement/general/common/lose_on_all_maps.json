@@ -1,0 +1,55 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:dark_oak_sapling"
+      },
+      "title": "Lost in the Woods",
+      "description": "Lose on every Map",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true
+    },
+    "parent": "game:general/root",
+    "criteria": {
+      "0": {
+        "trigger": "minecraft:impossible"
+      },
+      "1": {
+        "trigger": "minecraft:impossible"
+      },
+      "2": {
+        "trigger": "minecraft:impossible"
+      },
+      "3": {
+        "trigger": "minecraft:impossible"
+      },
+      "4": {
+        "trigger": "minecraft:impossible"
+      },
+      "5": {
+        "trigger": "minecraft:impossible"
+      },
+      "6": {
+        "trigger": "minecraft:impossible"
+      },
+      "7": {
+        "trigger": "minecraft:impossible"
+      },
+      "8": {
+        "trigger": "minecraft:impossible"
+      },
+      "9": {
+        "trigger": "minecraft:impossible"
+      },
+      "10": {
+        "trigger": "minecraft:impossible"
+      },
+      "11": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "rewards": {
+      "function": "game:levels/common_advancement"
+    }
+  }
+  

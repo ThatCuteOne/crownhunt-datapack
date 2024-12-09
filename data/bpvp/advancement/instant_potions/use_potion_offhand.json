@@ -1,0 +1,42 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "equipment": {
+                    "mainhand": {
+                      "items": [
+                        "minecraft:potion"
+                      ],
+                      "components": {
+                        "minecraft:custom_data": {"use_instantly":true}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "item": {
+            "items": [
+              "minecraft:potion"
+            ],
+            "components": {
+              "minecraft:custom_data": {"use_instantly":true}
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+        "function": "bpvp:instant_potions/using_potion_offhand"
+    }
+  }
+  

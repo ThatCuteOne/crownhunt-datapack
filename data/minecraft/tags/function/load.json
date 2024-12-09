@@ -2,7 +2,6 @@
     "values": [
         "game:load",
         "bpvp:load",
-        "turns:load",
         "navigator:load",
         "iss:load"
     ]

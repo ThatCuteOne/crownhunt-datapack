@@ -2,7 +2,6 @@
     "values": [
         "game:tick",
         "bpvp:tick",
-        "turns:tick",
         "navigator:tick",
         "iss:tick"
     ]

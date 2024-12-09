@@ -1,6 +1,6 @@
 
 
-
+NOTE: THIS IS OLD DOES NOT WORK ANYMORE
 
 
 Step 1 - saving -
@@ -19,7 +19,7 @@ function turns:player/load/pre_load_data {kit:"KITNAME",player_id:-1}
 if you have done everything correctly the kit should load with all of your items
 
 
-NOTE: THIS IS OLD DOES NOT WORK ANYMORE
+
 
 Step 2 - implementing the Kit -
 To implement the kit into the game you need to open the datapack located in your worlds Folder

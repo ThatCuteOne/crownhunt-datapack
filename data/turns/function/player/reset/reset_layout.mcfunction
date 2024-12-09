@@ -1,1 +1,0 @@
-$data remove storage data.inventory player.inventory.$(player_id).$(kit)

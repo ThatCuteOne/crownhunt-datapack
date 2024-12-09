@@ -1,11 +1,10 @@
-function game:int/remove_game_tags
 
 team leave @s
 tag @s remove game.in_game
 tag @s remove lobby.in_team
 tag @s remove lobby.in_ffa
 clear @s
-execute in overworld run spawnpoint @s 57 56 42
+execute in game:lobby run spawnpoint @s 0 100 0
 gamerule showDeathMessages false
 kill @s
 gamerule showDeathMessages true

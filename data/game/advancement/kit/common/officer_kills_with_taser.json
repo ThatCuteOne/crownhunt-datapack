@@ -1,57 +1,60 @@
 {
-	"display": {
-		"icon": {
-			"id": "minecraft:crossbow",
-			"components": {
-				"minecraft:charged_projectiles": [
-					{
-						"id": "minecraft:arrow"
-					}
-				]
-			}
-		},
-		"title": "Police brutality",
-		"description": "Kill an enemy with the Officer's Taser",
-		"frame": "task",
-		"show_toast": true,
-		"announce_to_chat": true,
-		"hidden": false
-	},
-	"parent": "game:kit/root",
-	"criteria": {
-		"requirement": {
-			"trigger": "minecraft:killed_by_crossbow",
-			"conditions": {
-				"player": [
-					{
-						"condition": "minecraft:all_of",
-						"terms": [
-							{
-								"condition": "minecraft:entity_scores",
-								"entity": "this",
-								"scores": {
-									"kit.id": 10
-								}
-							},
-							{
-								"condition": "minecraft:entity_properties",
-								"entity": "this",
-								"predicate": {
-									"nbt": "{Tags:[\"game.in_game\"]}"
-								}
-							}
-						]
-					}
-				],
-				"victims": [
-					{
-						"type": "minecraft:player"
-					}
-				]
-			}
-		}
-	},
-	"rewards": {
-		"function": "game:levels/common_advancement"
-	}
-}
+    "display": {
+      "icon": {
+        "id": "minecraft:crossbow",
+        "components": {
+          "minecraft:charged_projectiles": [
+            {
+              "id": "minecraft:arrow"
+            }
+          ]
+        }
+      },
+      "title": "Police brutality",
+      "description": "Kill an enemy with the Officer's Taser",
+      "frame": "task",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "game:kit/root",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:killed_by_arrow",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "minecraft:entity_scores",
+                  "entity": "this",
+                  "scores": {
+                    "kit.id": 10
+                  }
+                },
+                {
+                  "condition": "minecraft:entity_properties",
+                  "entity": "this",
+                  "predicate": {
+                    "nbt": "{Tags:[\"game.in_game\"]}"
+                  }
+                }
+              ]
+            }
+          ],
+          "fired_from_weapon": {
+            "items": "minecraft:crossbow"
+          },
+          "victims": [
+            {
+              "type": "minecraft:player"
+            }
+          ]
+        }
+      }
+    },
+    "rewards": {
+      "function": "game:levels/common_advancement"
+    }
+  }

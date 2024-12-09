@@ -32,7 +32,7 @@ execute in game:lobby run tp @a[tag=game.in_game] 0 100 0
 execute in game:lobby run tp @a[team=spectator] 0 100 0
 tag @a[tag=game.in_game] add lobby.in_lobby
 team empty spectator
-spawnpoint @a 57 56 42
+execute in game:lobby run spawnpoint @a 0 100 0
 scoreboard players reset @a sidebar
 scoreboard objectives setdisplay sidebar
 scoreboard players set blue_score gamemode.general 0
@@ -40,6 +40,7 @@ scoreboard players set red_score gamemode.general 0
 scoreboard players set played_rounds gamemode.general 0
 bossbar set star_timer_blue visible false
 bossbar set star_timer_red visible false
+tag @e remove has_star
 tag @a remove game.in_game
 scoreboard players add current_round_id gamemode.round_id 1
 scoreboard players set phase gamemode.general 0

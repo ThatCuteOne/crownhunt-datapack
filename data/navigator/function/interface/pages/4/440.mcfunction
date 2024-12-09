@@ -1,4 +1,4 @@
-item replace entity @s hotbar.8 with carrot_on_a_stick[custom_data={navigator:{action:{page:400}}},custom_name='{"color":"red","italic":false,"text":"Back","font":"game:small_caps"}',item_model="game:kit_viewer/right_arrow"]
+item replace entity @s hotbar.8 with carrot_on_a_stick[custom_data={navigator:{action:{page:400}}},custom_name='{"color":"red","italic":false,"text":"Back","font":"game:small_caps"}',item_model="game:arrows/right_arrow"]
 
 
 
@@ -26,4 +26,4 @@ execute if data storage game:map_switcher whitelist[{id:5}] run item replace ent
 
 
 
-item replace entity @s hotbar.0 with carrot_on_a_stick[custom_data={navigator:{action:{page:441}}},custom_name='{"color":"green","italic":false,"text":"next page","font":"game:small_caps"}',item_model="game:kit_viewer/left_arrow"]
+item replace entity @s hotbar.0 with carrot_on_a_stick[custom_data={navigator:{action:{page:441}}},custom_name='{"color":"green","italic":false,"text":"next page","font":"game:small_caps"}',item_model="game:arrows/left_arrow"]

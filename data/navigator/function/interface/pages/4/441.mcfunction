@@ -1,4 +1,4 @@
-item replace entity @s hotbar.8 with carrot_on_a_stick[custom_data={navigator:{action:{page:440}}},custom_name='{"color":"red","italic":false,"text":"Back","font":"game:small_caps"}',item_model="game:kit_viewer/right_arrow"]
+item replace entity @s hotbar.8 with carrot_on_a_stick[custom_data={navigator:{action:{page:440}}},custom_name='{"color":"red","italic":false,"text":"Back","font":"game:small_caps"}',item_model="game:arrows/right_arrow"]
 
 execute if score whitelist.select_toggle gamemode.general matches 0 run item replace entity @s hotbar.7 with carrot_on_a_stick[custom_data={navigator:{action:{command:"function navigator:interface/pages/4/440/select_all"}}},custom_name='{"color":"gray","italic":false,"text":"Select all Maps","font":"game:small_caps"}',item_model="game:navigator/map/filled_map"]
 execute if score whitelist.select_toggle gamemode.general matches 1 run item replace entity @s hotbar.7 with carrot_on_a_stick[custom_data={navigator:{action:{command:"function navigator:interface/pages/4/440/deselect_all"}}},custom_name='{"color":"white","italic":false,"text":"Deselect all Maps","font":"game:small_caps"}',item_model="map"]

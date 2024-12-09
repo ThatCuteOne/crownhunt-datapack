@@ -1,4 +1,4 @@
-item replace entity @s hotbar.8 with carrot_on_a_stick[custom_data={navigator:{action:{page:100}}},custom_name='{"color":"red","italic":false,"text":"Back","font":"game:small_caps"}',item_model="game:kit_viewer/right_arrow"]
+item replace entity @s hotbar.8 with carrot_on_a_stick[custom_data={navigator:{action:{page:100}}},custom_name='{"color":"red","italic":false,"text":"Back","font":"game:small_caps"}',item_model="game:arrows/right_arrow"]
 
 
 
@@ -23,8 +23,8 @@ execute if score selected_map gamemode.settings matches 5 run item replace entit
 
 
 
-execute unless score selected_map gamemode.settings matches 6.. run item replace entity @s hotbar.0 with carrot_on_a_stick[custom_data={navigator:{action:{page:301}}},custom_name='{"color":"green","italic":false,"text":"next page","font":"game:small_caps"}',item_model="game:kit_viewer/left_arrow"]
-execute if score selected_map gamemode.settings matches 6.. run item replace entity @s hotbar.0 with carrot_on_a_stick[custom_data={navigator:{action:{page:301}}},custom_name='{"color":"green","italic":false,"text":"next page","font":"game:small_caps"}',item_model="game:kit_viewer/left_arrow_blinking"]
+execute unless score selected_map gamemode.settings matches 6.. run item replace entity @s hotbar.0 with carrot_on_a_stick[custom_data={navigator:{action:{page:301}}},custom_name='{"color":"green","italic":false,"text":"next page","font":"game:small_caps"}',item_model="game:arrows/left_arrow"]
+execute if score selected_map gamemode.settings matches 6.. run item replace entity @s hotbar.0 with carrot_on_a_stick[custom_data={navigator:{action:{page:301}}},custom_name='{"color":"green","italic":false,"text":"next page","font":"game:small_caps"}',item_model="game:arrows/left_arrow_blinking"]
 
 
 

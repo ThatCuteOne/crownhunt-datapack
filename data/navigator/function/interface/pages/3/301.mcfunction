@@ -1,5 +1,5 @@
-execute unless score selected_map gamemode.settings matches ..5 run item replace entity @s hotbar.8 with carrot_on_a_stick[custom_data={navigator:{action:{page:300}}},custom_name='{"color":"red","italic":false,"text":"Back","font":"game:small_caps"}',item_model="game:kit_viewer/right_arrow"]
-execute if score selected_map gamemode.settings matches ..5 run item replace entity @s hotbar.8 with carrot_on_a_stick[custom_data={navigator:{action:{page:300}}},custom_name='{"color":"red","italic":false,"text":"Back","font":"game:small_caps"}',item_model="game:kit_viewer/right_arrow_blinking"]
+execute unless score selected_map gamemode.settings matches ..5 run item replace entity @s hotbar.8 with carrot_on_a_stick[custom_data={navigator:{action:{page:300}}},custom_name='{"color":"red","italic":false,"text":"Back","font":"game:small_caps"}',item_model="game:arrows/right_arrow"]
+execute if score selected_map gamemode.settings matches ..5 run item replace entity @s hotbar.8 with carrot_on_a_stick[custom_data={navigator:{action:{page:300}}},custom_name='{"color":"red","italic":false,"text":"Back","font":"game:small_caps"}',item_model="game:arrows/right_arrow_blinking"]
 
 
 

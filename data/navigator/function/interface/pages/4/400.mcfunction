@@ -1,4 +1,4 @@
-item replace entity @s hotbar.8 with carrot_on_a_stick[custom_data={navigator:{action:{page:100}}},custom_name='{"color":"red","italic":false,"text":"Back","font":"game:small_caps"}',item_model="game:kit_viewer/right_arrow"]
+item replace entity @s hotbar.8 with carrot_on_a_stick[custom_data={navigator:{action:{page:100}}},custom_name='{"color":"red","italic":false,"text":"Back","font":"game:small_caps"}',item_model="game:arrows/right_arrow"]
 
 
 item replace entity @s hotbar.1 with carrot_on_a_stick[custom_data={navigator:{action:{page:410}}},custom_name='[{"color":"white","italic":false,"text":"Change the Crown-holding Time","font":"game:small_caps"}]',item_model="game:navigator/settings/crown_holding_time"]

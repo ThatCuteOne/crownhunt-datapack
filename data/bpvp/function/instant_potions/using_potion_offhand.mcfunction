@@ -9,4 +9,3 @@ advancement revoke @s only bpvp:instant_potions/use_potion_offhand
 
 playsound entity.generic.drink player @a ~ ~ ~
 
-function #bpvp:on_use_instant_potion

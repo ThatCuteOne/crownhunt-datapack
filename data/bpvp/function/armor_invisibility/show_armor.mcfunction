@@ -6,9 +6,9 @@ item replace entity @s armor.chest from entity @e[tag=bpvp.temp,limit=1] armor.c
 item replace entity @s armor.legs from entity @e[tag=bpvp.temp,limit=1] armor.legs
 item replace entity @s armor.feet from entity @e[tag=bpvp.temp,limit=1] armor.feet
 
-attribute @s generic.armor modifier remove 153e1d05-30c1-42aa-a176-30909cd0d7bf
-attribute @s generic.armor_toughness modifier remove 153e1d05-30c1-42aa-a176-30909cd0d7bf
-attribute @s generic.knockback_resistance modifier remove 153e1d05-30c1-42aa-a176-30909cd0d7bf
+attribute @s armor modifier remove game:armor_invis
+attribute @s armor_toughness modifier remove game:armor_invis
+attribute @s knockback_resistance modifier remove game:armor_invis
 
 kill @e[tag=bpvp.temp]
 tag @s remove bpvp.self

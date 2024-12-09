@@ -9,9 +9,9 @@ scoreboard players operation @e[tag=bpvp.new] bpvp.player_id = @s bpvp.player_id
 
 tag @e remove bpvp.new
 
-execute store result storage bpvp:temp armor int 1 run attribute @s generic.armor get
-execute store result storage bpvp:temp armor_toughness int 1 run attribute @s generic.armor_toughness get
-execute store result storage bpvp:temp knockback_resistance int 1 run attribute @s generic.knockback_resistance get
+execute store result storage bpvp:temp armor int 1 run attribute @s armor get
+execute store result storage bpvp:temp armor_toughness int 1 run attribute @s armor_toughness get
+execute store result storage bpvp:temp knockback_resistance int 1 run attribute @s knockback_resistance get
 
 function bpvp:armor_invisibility/set_armor with storage bpvp:temp
 

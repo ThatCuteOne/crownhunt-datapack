@@ -5,5 +5,3 @@ item replace entity @s[gamemode=!creative] weapon.mainhand with air
 advancement revoke @s only bpvp:instant_potions/use_potion_mainhand
 
 playsound entity.generic.drink player @a ~ ~ ~
-
-function #bpvp:on_use_instant_potion

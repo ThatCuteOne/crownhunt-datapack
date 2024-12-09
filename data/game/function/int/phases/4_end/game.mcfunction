@@ -28,8 +28,8 @@ tag @a[tag=game.in_game] remove selected_kit
 gamemode adventure @a[tag=game.in_game]
 gamemode adventure @a[team=spectator]
 tag @a[tag=game.in_game] add lobby.in_team
-execute in overworld run tp @a[tag=game.in_game] 57 56 42
-execute in overworld run tp @a[team=spectator] 57 56 42
+execute in game:lobby run tp @a[tag=game.in_game] 0 100 0
+execute in game:lobby run tp @a[team=spectator] 0 100 0
 tag @a[tag=game.in_game] add lobby.in_lobby
 team empty spectator
 spawnpoint @a 57 56 42

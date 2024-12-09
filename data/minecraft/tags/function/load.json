@@ -3,6 +3,7 @@
         "game:load",
         "bpvp:load",
         "turns:load",
-        "navigator:load"
+        "navigator:load",
+        "iss:load"
     ]
 }

@@ -3,6 +3,7 @@
         "game:tick",
         "bpvp:tick",
         "turns:tick",
-        "navigator:tick"
+        "navigator:tick",
+        "iss:tick"
     ]
 }

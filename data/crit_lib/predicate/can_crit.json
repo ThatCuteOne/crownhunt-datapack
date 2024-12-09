@@ -1,0 +1,40 @@
+{
+	"condition": "minecraft:all_of",
+	"terms": [
+		{
+			"condition": "minecraft:entity_properties",
+			"entity": "this",
+			"predicate": {
+				"movement": {
+					"fall_distance": {
+						"min": 0.001
+					}
+				}
+			}
+		},
+		{
+			"condition": "minecraft:any_of",
+			"terms": [
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"flags": {
+							"is_sprinting": false
+						}
+					}
+				},
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"nbt": "{Tags:[\"crit_lib.can_crit_while_sprinting\"]}",
+						"flags": {
+							"is_sprinting": true
+						}
+					}
+				}
+			]
+		}
+	]
+}

@@ -3,6 +3,7 @@
         "game:tick",
         "bpvp:tick",
         "navigator:tick",
-        "iss:tick"
+        "iss:tick",
+        "crit_lib:tick"
     ]
 }

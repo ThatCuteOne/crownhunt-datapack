@@ -8,9 +8,9 @@ item replace entity @s hotbar.6 with air
 item replace entity @s hotbar.7 with air
 item replace entity @s hotbar.8 with air
 
-clear @s *[custom_data~{navigator:{}}]
-
-playsound game:ui.select master @s
+playsound minecraft:item.armor.equip_generic master @s ~ ~ ~ 1 1
+clear @s carrot_on_a_stick[custom_data~{navigator:{}}]
+clear @s player_head[custom_data~{navigator:{}}]
 
 execute store result storage navigator:temp page int 1 run scoreboard players get @s navigator.page
 execute store result storage navigator:temp collection int 0.01 run scoreboard players get @s navigator.page

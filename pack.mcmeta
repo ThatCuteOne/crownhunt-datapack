@@ -1,9 +1,9 @@
 {
     "pack":
     {
-        "pack_format":48,
+        "pack_format":61,
         "description":"idk",
-        "supported_formats": [22,200]
+        "supported_formats": [20,200]
     },
     "filter":{
         "block":[

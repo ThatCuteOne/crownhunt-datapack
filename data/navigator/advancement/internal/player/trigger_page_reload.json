@@ -5,7 +5,9 @@
 			"conditions": {
 				"items": [
 					{
-						"nbt": "{navigator:{}}"
+						"predicates": {
+							"minecraft:custom_data": {"navigator":{}}
+						}
 					}
 				]
 			}

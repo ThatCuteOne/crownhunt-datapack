@@ -1,0 +1,1 @@
+function navigator:interface/player/disable_navigator

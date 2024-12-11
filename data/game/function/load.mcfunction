@@ -1,6 +1,7 @@
 #declare storage data.settings
 #declare storage data.leaderboard
 #declare storage temp
+#declare storage game:map_switcher
 
 scoreboard objectives add sidebar playerKillCount {"text": "Gamemode"}
 scoreboard objectives add lobby.credits dummy
@@ -40,13 +41,11 @@ scoreboard objectives add carrot_on_a_stick.trigger used:carrot_on_a_stick
 
 execute store result storage data.settings max_kit_select int 1 run scoreboard players get max_kit_amount gamemode.general
 
-#declare storage game:map_switcher
 
 gamerule fallDamage false
 
 scoreboard objectives add game.player.left_game custom:leave_game
 
-#team modify lobby
 
 team add lobby
 team modify lobby friendlyFire false

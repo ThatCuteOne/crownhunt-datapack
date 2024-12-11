@@ -21,6 +21,7 @@ scoreboard players reset @a gamemode.advancements.round_kills
 
 advancement grant @a[tag=game.in_game] only bpvp:attack_while_invisible
 
+tag @a remove has_star
 
 effect clear @a[tag=game.in_game]
 execute as @a[tag=death] run function game:int/phases/3_game/death/respawn

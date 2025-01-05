@@ -17,7 +17,6 @@ execute if score temp temp matches 2.. run item replace entity @s[team=!Blue] ho
 item replace entity @s hotbar.4 with carrot_on_a_stick[custom_data={navigator:{action:{command:"function navigator:interface/pages/1/110/join_spectator"}}},custom_name='{"color":"light_purple","italic":false,"text":"Join Spectator","font":"game:small_caps"}',item_model="ender_eye"]
 
 
-
 scoreboard players set i navigator 0
 execute as @a[team=Red] run function navigator:interface/pages/2/200/add_head_red
 scoreboard players set i navigator 0

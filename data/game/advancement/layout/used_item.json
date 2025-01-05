@@ -1,0 +1,16 @@
+{
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:using_item",
+			"conditions": {
+				"player": {},
+				"item": {
+					"items": "#game:layout/use_detector"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "game:int/lobby/layout/prevent/used"
+	}
+}

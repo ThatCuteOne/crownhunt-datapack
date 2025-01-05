@@ -29,5 +29,4 @@
     "rewards": {
         "function": "bpvp:team_potions/using_potion_mainhand"
     }
-  }
-  
+}

@@ -13,6 +13,10 @@ execute as @a[tag=game.in_game] at @s if score @s gamemode.kills matches 1.. run
 execute as @e[type=#arrows] run data modify entity @s pickup set value 0b
 clear @a[tag=game.in_game] glass_bottle
 
+# readds can place that was removed in the layout
+execute as @s[scores={kit.id=11}] if items entity @s weapon.mainhand creeper_spawn_egg run item modify entity @s weapon.mainhand game:layout/add_can_place
+execute as @s[scores={kit.id=11}] if items entity @s weapon.offhand creeper_spawn_egg run item modify entity @s weapon.offhand game:layout/add_can_place
+
 
 effect give @a[tag=has_star] glowing infinite 0 true
 data modify entity @e[tag=star,limit=1] Motion set value [0.0d,0.0d,0.0d]

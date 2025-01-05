@@ -6,7 +6,7 @@ tag @s remove lobby.in_ffa
 clear @s
 execute in game:lobby run spawnpoint @s 0 100 0
 gamerule showDeathMessages false
-kill @s
+execute in game:lobby run tp @s 0 100 0
 gamerule showDeathMessages true
 tag @s add lobby.in_lobby
 team join lobby @s

@@ -11,7 +11,7 @@ execute if score credits.timer.tick lobby.credits matches 40.. if score sequence
 execute if score credits.timer.tick lobby.credits matches 40.. if score sequence.master lobby.credits matches 5 run function game:int/lobby/credits/art
 execute if score credits.timer.tick lobby.credits matches 40.. if score sequence.master lobby.credits matches 4 run function game:int/lobby/credits/balanceing
 execute if score credits.timer.tick lobby.credits matches 40.. if score sequence.master lobby.credits matches 3 run function game:int/lobby/credits/codeing
-execute if score credits.timer.tick lobby.credits matches 40.. if score sequence.master lobby.credits matches 2 run function game:int/lobby/credits/conzept
+execute if score credits.timer.tick lobby.credits matches 40.. if score sequence.master lobby.credits matches 2 run function game:int/lobby/credits/concept
 execute if score credits.timer.tick lobby.credits matches 40.. if score sequence.master lobby.credits matches 1 run function game:int/lobby/credits/title
 
 

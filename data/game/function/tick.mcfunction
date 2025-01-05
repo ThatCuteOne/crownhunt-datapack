@@ -28,7 +28,7 @@ execute as @a if score @s game.player.left_game matches 1.. run function game:in
 function game:int/phases/tick
 
 
-execute if entity @a[tag=lobby.in_ffa] run function game:int/lobby/ffa/tick
+
 
 
 # advencements

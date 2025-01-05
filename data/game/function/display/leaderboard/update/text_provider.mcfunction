@@ -9,5 +9,8 @@ data modify storage temp name set from entity @e[tag=game.leaderboard.name_provi
 kill @e[tag=game.leaderboard.name_provider.temp]
 
 $execute store result storage temp score int 1 run scoreboard players get @e[tag=game.temp,limit=1] leaderboard.$(name)
+#execute if score @s leaderboard.id matches 2 run return run function game:display/leaderboard/update/text_provider/first_place with storage temp
+#execute if score @s leaderboard.id matches 3 run return run function game:display/leaderboard/update/text_provider/second_place with storage temp
+#execute if score @s leaderboard.id matches 4 run return run function game:display/leaderboard/update/text_provider/third_place with storage temp
 function game:display/leaderboard/update/text_provider/concatinate_player_string with storage temp
 

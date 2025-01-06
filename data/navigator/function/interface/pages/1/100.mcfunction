@@ -3,4 +3,5 @@ execute if score phase gamemode.general matches 0 run function navigator:interfa
 execute if score phase gamemode.general matches 1.. run function navigator:interface/pages/1/disabled_settings
 
 
-item replace entity @s hotbar.0 with carrot_on_a_stick[custom_data={navigator:{action:{page:500}}},custom_name='{"color":"dark_gray","italic":false,"text":"Edit Kit Layout","font":"game:small_caps"}',item_model="game:arrows/right_arrow"]
+#item replace entity @s hotbar.0 with carrot_on_a_stick[custom_data={navigator:{action:{page:500}}},custom_name='{"color":"dark_gray","italic":false,"text":"Edit Kit Layout","font":"game:small_caps"}',item_model="game:arrows/right_arrow"]
+loot replace entity @s hotbar.0 loot navigator:interface/1/give_edit_layout

@@ -3,7 +3,9 @@
 		"requirement": {
 			"trigger": "minecraft:using_item",
 			"conditions": {
-				"player": {},
+				"player": {
+					"nbt": "{Tags:[\"lobby.in_lobby\"]}"
+				},
 				"item": {
 					"items": "#game:layout/use_detector"
 				}

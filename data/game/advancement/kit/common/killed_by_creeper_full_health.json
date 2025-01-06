@@ -1,0 +1,32 @@
+{
+	"display": {
+		"icon": {
+			"id": "minecraft:cocoa_beans"
+		},
+		"title": "Rest in Pieces",
+		"description": "Take 10 hearts of damage from a creeper",
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": true,
+		"hidden": true
+	},
+	"parent": "game:kit/root",
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:entity_hurt_player",
+			"conditions": {
+				"damage": {
+					"taken": 20,
+					"blocked": false,
+					"source_entity": {
+						"type": "minecraft:creeper"
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "game:levels/common_advancement"
+	},
+	"sends_telemetry_event": false
+}

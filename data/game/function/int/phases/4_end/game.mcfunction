@@ -28,11 +28,11 @@ tag @a[tag=game.in_game] remove selected_kit
 gamemode adventure @a[tag=game.in_game]
 gamemode adventure @a[team=spectator]
 tag @a[tag=game.in_game] add lobby.in_team
-execute in game:lobby run tp @a[tag=game.in_game] 0 100 0
-execute in game:lobby run tp @a[team=spectator] 0 100 0
+execute in game:lobby run tp @a[tag=game.in_game] 1.0 100 2
+execute in game:lobby run tp @a[team=spectator] 1.0 100 2
 tag @a[tag=game.in_game] add lobby.in_lobby
 team empty spectator
-execute in game:lobby run spawnpoint @a 0 100 0
+execute in game:lobby run spawnpoint @a 1 100 2
 scoreboard players reset @a sidebar
 scoreboard objectives setdisplay sidebar
 scoreboard players set blue_score gamemode.general 0

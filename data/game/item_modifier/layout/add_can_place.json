@@ -1,12 +1,10 @@
 {
-	"function": "minecraft:set_components",
-	"components": {
-		"minecraft:can_place_on": {
-			"predicates": [
-				{
-					"blocks": "#game:all"
-				}
-			]
-		}
-	}
-}
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:can_place_on": [
+        {
+          "blocks": "#game:all"
+        }
+      ]
+    }
+  }

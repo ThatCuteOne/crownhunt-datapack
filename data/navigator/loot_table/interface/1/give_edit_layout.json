@@ -17,7 +17,7 @@
                                             }
                                         }
 								},
-								"minecraft:custom_name": "{\"color\":\"dark_gray\",\"italic\":false,\"text\":\"Edit Kit Layout\",\"font\":\"game:small_caps\"}",
+								"minecraft:custom_name": {"color":"dark_gray","italic":false,"text":"Edit Kit Layout","font":"game:small_caps"},
 								"minecraft:consumable": {
 									"consume_seconds": 99999,
 									"animation": "none",

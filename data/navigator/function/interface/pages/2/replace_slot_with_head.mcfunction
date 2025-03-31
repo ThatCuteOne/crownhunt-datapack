@@ -1,2 +1,2 @@
-$execute if entity @s[team=Blue] run item replace entity @a[tag=game.self,limit=1] $(slot) with player_head[profile="$(name)",item_name='{"text":"$(name)","color":"blue"}',custom_data={navigator:{}}]
-$execute if entity @s[team=Red] run item replace entity @a[tag=game.self,limit=1] $(slot) with player_head[profile="$(name)",item_name='{"text":"$(name)","color":"red"}',custom_data={navigator:{}}]
+$execute if entity @s[team=Blue] run item replace entity @a[tag=game.self,limit=1] $(slot) with player_head[profile="$(name)",item_name={"text":"$(name)","color":"blue"},custom_data={navigator:{}}]
+$execute if entity @s[team=Red] run item replace entity @a[tag=game.self,limit=1] $(slot) with player_head[profile="$(name)",item_name={"text":"$(name)","color":"red"},custom_data={navigator:{}}]

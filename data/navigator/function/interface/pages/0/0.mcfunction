@@ -1,1 +1,1 @@
-item replace entity @s hotbar.8 with carrot_on_a_stick[custom_data={navigator:{action:{page:100}}},item_model="compass",custom_name='{"color":"green","font":"game:small_caps","italic":false,"text":"Open Navigator"}']
+item replace entity @s hotbar.8 with carrot_on_a_stick[custom_data={navigator:{action:{page:100}}},item_model="compass",custom_name={"color":"green","font":"game:small_caps","italic":false,"text":"Open Navigator"}]

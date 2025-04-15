@@ -1,0 +1,7 @@
+item replace entity @s container.0 with minecraft:stone_sword 1
+item replace entity @s container.1 with minecraft:crossbow[minecraft:enchantments={"minecraft:multishot":1},minecraft:charged_projectiles=[{id:"minecraft:firework_rocket",count:16,components:{"minecraft:fireworks":{explosions:[{shape:"small_ball",colors:[16711680,16768219]},{shape:"small_ball",colors:[6911,16770019]}],flight_duration:127b}}},{id:"minecraft:firework_rocket",count:16,components:{"minecraft:fireworks":{explosions:[{shape:"small_ball",colors:[16711680,16768219]},{shape:"small_ball",colors:[6911,16770019]}],flight_duration:127b}}},{id:"minecraft:firework_rocket",count:16,components:{"minecraft:fireworks":{explosions:[{shape:"small_ball",colors:[16711680,16768219]},{shape:"small_ball",colors:[6911,16770019]}],flight_duration:127b}}}]] 1
+item replace entity @s container.2 with minecraft:cooked_beef 8
+item replace entity @s armor.feet with minecraft:iron_boots 1
+item replace entity @s armor.legs with minecraft:leather_leggings[minecraft:trim={material:"minecraft:redstone",pattern:"minecraft:rib"},minecraft:dyed_color=16383998] 1
+item replace entity @s armor.chest with minecraft:leather_chestplate[minecraft:trim={material:"minecraft:redstone",pattern:"minecraft:spire"},minecraft:dyed_color=3949738] 1
+item replace entity @s weapon.offhand with minecraft:firework_rocket[minecraft:fireworks={explosions:[{shape:"small_ball",colors:[16711680,16768219]},{shape:"small_ball",colors:[6911,16770019]}],flight_duration:127b}] 16

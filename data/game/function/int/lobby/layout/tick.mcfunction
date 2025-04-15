@@ -8,7 +8,6 @@ execute as @e[type=splash_potion,distance=0..] run function game:int/lobby/layou
 execute as @e[type=lingering_potion,distance=0..] run function game:int/lobby/layout/prevent/potion
 
 
-
 kill @e[type=fishing_bobber]
 title @s actionbar [{"text": "Press ","font": "game:small_caps","color": "red"},{"keybind": "key.sneak","color": "gold"},{"text": " To Save Your Layout","color": "red"}]
 

@@ -6,7 +6,7 @@ tag @s remove bpvp.temp
 execute on attacker unless predicate crit_lib:can_crit run return fail
 execute if score @s bpvp.damage_blocked_by_shield matches ..15 run return fail
 
-summon zombie ^ ^ ^100 {Tags:["bpvp.temp"],HandItems:[{id:"diamond_axe",count:1b},{}]}
+summon zombie ^ ^ ^100 {Tags:["bpvp.temp"],equipment:{mainhand:{id:"diamond_axe",count:1b}}}
 damage @s 0.01 mob_attack by @e[tag=bpvp.temp,limit=1]
 kill @e[tag=bpvp.temp]
 function bpvp:crit_disable/display_disable

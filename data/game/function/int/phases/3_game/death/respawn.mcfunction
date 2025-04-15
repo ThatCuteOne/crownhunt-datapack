@@ -12,7 +12,7 @@ title @s clear
 clear @s
 scoreboard players reset @s gamemode.timer
 scoreboard players reset @s gamemode.death
-function game:int/kit_loading/give_kit
+function game:int/kit_loading/give
 scoreboard players reset @s gamemode.advancements.archer_arrows_shot
 tag @s remove death
 gamemode adventure @s

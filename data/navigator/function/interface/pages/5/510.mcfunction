@@ -1,1 +1,1 @@
-function game:int/kit_loading/give_kit
+function game:int/kit_loading/give

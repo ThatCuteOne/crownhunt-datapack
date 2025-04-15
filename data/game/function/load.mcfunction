@@ -98,6 +98,7 @@ scoreboard objectives add game.carved_pumpkin.picked_up picked_up:carved_pumpkin
 scoreboard objectives add gamemode.death.save deathCount
 scoreboard objectives add gamemode.death deathCount
 scoreboard objectives add gamemode.kills custom:player_kills
+scoreboard objectives add gamemode.damage_dealt custom:damage_dealt
 gamerule doImmediateRespawn true
 gamerule keepInventory true
 
@@ -110,3 +111,22 @@ scoreboard objectives add lobby.kit_viewer dummy
 
 # kit loading
 scoreboard objectives add kit.id dummy
+
+# function fallbacks
+data modify storage iss data.0.fallback set value "game:kits/give_fallback"
+data modify storage iss data.1.fallback set value "game:kits/give_fallback"
+data modify storage iss data.2.fallback set value "game:kits/give_fallback"
+data modify storage iss data.3.fallback set value "game:kits/give_fallback"
+data modify storage iss data.4.fallback set value "game:kits/give_fallback"
+data modify storage iss data.5.fallback set value "game:kits/give_fallback"
+data modify storage iss data.6.fallback set value "game:kits/give_fallback"
+data modify storage iss data.7.fallback set value "game:kits/give_fallback"
+data modify storage iss data.8.fallback set value "game:kits/give_fallback"
+data modify storage iss data.9.fallback set value "game:kits/give_fallback"
+data modify storage iss data.10.fallback set value "game:kits/give_fallback"
+data modify storage iss data.11.fallback set value "game:kits/give_fallback"
+data modify storage iss data.12.fallback set value "game:kits/give_fallback"
+data modify storage iss data.13.fallback set value "game:kits/give_fallback"
+data modify storage iss data.14.fallback set value "game:kits/give_fallback"
+data modify storage iss data.15.fallback set value "game:kits/give_fallback"
+data modify storage iss data.16.fallback set value "game:kits/give_fallback"

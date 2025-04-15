@@ -1,5 +1,3 @@
-
-
 item replace entity @s hotbar.0 from entity @e[tag=kit.selected,sort=arbitrary,limit=1] armor.head
 
 tag @e[tag=kit.selected,tag=!temp,sort=arbitrary,limit=1] add temp

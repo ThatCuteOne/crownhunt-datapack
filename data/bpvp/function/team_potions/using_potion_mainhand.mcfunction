@@ -3,4 +3,3 @@ execute if data storage bpvp:temp custom_effects[0] run function bpvp:team_potio
 item replace entity @s[gamemode=!creative] weapon.mainhand with air
 advancement revoke @s only bpvp:team_potions/use_potion_mainhand
 playsound entity.generic.drink player @a ~ ~ ~
-

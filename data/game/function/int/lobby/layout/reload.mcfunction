@@ -1,2 +1,2 @@
-function game:kits/give_fallback
+function game:int/kit_loading/give
 effect clear @s

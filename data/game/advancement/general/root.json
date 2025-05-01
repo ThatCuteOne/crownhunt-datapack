@@ -3,7 +3,7 @@
       "icon": {
         "id": "minecraft:carved_pumpkin",
 			  "components": {
-				"minecraft:item_model": "game:crown/star_crown"
+				"minecraft:item_model": "game:crown"
 			}
       },
       "title": "Crownhunt",

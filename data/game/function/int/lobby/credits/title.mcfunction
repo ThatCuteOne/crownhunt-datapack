@@ -3,7 +3,7 @@ execute if score sequence lobby.credits matches ..0 run scoreboard players set s
 
 
 execute if score sequence lobby.credits matches 3 run summon text_display ~ ~ ~ {Rotation:[90f,0f],teleport_duration:2,billboard:"fixed",alignment:"center",Tags:["lobby.credits_display","new"],text:{"color":"gold","font":"game:small_caps","text":"-----------------"}}
-execute if score sequence lobby.credits matches 2 run summon text_display ~ ~ ~ {Rotation:[90f,0f],teleport_duration:2,billboard:"fixed",alignment:"center",Tags:["lobby.credits_display","new"],text:{"color":"yellow","font":"game:small_caps","text":"--Crownhunt--"}}
+execute if score sequence lobby.credits matches 2 run summon text_display ~ ~ ~ {Rotation:[90f,0f],teleport_duration:2,billboard:"fixed",alignment:"center",Tags:["lobby.credits_display","new"],text:{"color":"white","font":"game:title","text":"t"},background:0}
 execute if score sequence lobby.credits matches 1 run summon text_display ~ ~ ~ {Rotation:[90f,0f],teleport_duration:2,billboard:"fixed",alignment:"center",Tags:["lobby.credits_display","new"],text:{"color":"gold","font":"game:small_caps","text":"-----------------"}}
 
 execute as @e[tag=lobby.credits_display,tag=new,tag=!anim] run data modify entity @s Rotation[0] set from entity @n[tag=lobby.credits] Rotation[0]

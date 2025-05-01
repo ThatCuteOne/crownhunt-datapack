@@ -7,14 +7,14 @@ execute if entity @s[tag=has_star] run scoreboard players operation @s leaderboa
 
 execute as @e[tag=game.map_center.item,sort=random] at @s if score @s gamemode.map_id = selected_map gamemode.settings if score gametype gamemode.settings matches 1 run tag @s add temp
 
-execute if score crown_behavior_type gamemode.settings matches 2 if entity @s[tag=has_star] at @e[tag=star.death_summon] run summon item ~ ~ ~ {Age:-32768,NoGravity:1b,Glowing:1b,Health:255,Invulnerable:1b,Tags:["star"],Item:{id:"minecraft:carved_pumpkin",count:1b,components:{"minecraft:custom_name":'{"text":"Crown of Time","color":"gold","italic":false}',"item_model":"game:crown/star_crown","minecraft:custom_data":{star:1b},"minecraft:enchantment_glint_override":true}}}
-execute if score crown_behavior_type gamemode.settings matches 1 if entity @s[tag=has_star] at @e[tag=game.map_center.item,limit=1,sort=random,tag=temp] run summon item ~ ~ ~ {NoGravity:1b,Glowing:1b,Health:255,Invulnerable:1b,Tags:["star"],Item:{id:"minecraft:carved_pumpkin",count:1b,components:{"minecraft:custom_name":'{"text":"Crown of Time","color":"gold","italic":false}',"item_model":"game:crown/star_crown","minecraft:custom_data":{star:1b},"minecraft:enchantment_glint_override":true}}}
+execute if score crown_behavior_type gamemode.settings matches 2 if entity @s[tag=has_star] at @e[tag=star.death_summon] run summon item ~ ~ ~ {Age:-32768,NoGravity:1b,Glowing:1b,Health:255,Invulnerable:1b,Tags:["star"],Item:{id:"minecraft:carved_pumpkin",count:1b,components:{"minecraft:custom_name":'{"text":"Crown of Time","color":"gold","italic":false}',"item_model":"game:crown","minecraft:custom_data":{star:1b},"minecraft:enchantment_glint_override":true}}}
+execute if score crown_behavior_type gamemode.settings matches 1 if entity @s[tag=has_star] at @e[tag=game.map_center.item,limit=1,sort=random,tag=temp] run summon item ~ ~ ~ {NoGravity:1b,Glowing:1b,Health:255,Invulnerable:1b,Tags:["star"],Item:{id:"minecraft:carved_pumpkin",count:1b,components:{"minecraft:custom_name":'{"text":"Crown of Time","color":"gold","italic":false}',"item_model":"game:crown","minecraft:custom_data":{star:1b},"minecraft:enchantment_glint_override":true}}}
 
 tag @s remove temp
 
 tag @s add crown.exclude
 
-execute if score crown_behavior_type gamemode.settings matches 3 at @e[tag=star.death_summon] if entity @s[tag=has_star] unless entity @a[tag=has_star,tag=!crown.exclude] run summon item ~ ~ ~ {Age:-32768,NoGravity:1b,Glowing:1b,Health:255,Invulnerable:1b,Tags:["star"],Item:{id:"minecraft:carved_pumpkin",count:1b,components:{"minecraft:custom_name":'{"text":"Crown of Time","color":"gold","italic":false}',"item_model":"game:crown/star_crown","minecraft:custom_data":{star:1b},"minecraft:enchantment_glint_override":true}}}
+execute if score crown_behavior_type gamemode.settings matches 3 at @e[tag=star.death_summon] if entity @s[tag=has_star] unless entity @a[tag=has_star,tag=!crown.exclude] run summon item ~ ~ ~ {Age:-32768,NoGravity:1b,Glowing:1b,Health:255,Invulnerable:1b,Tags:["star"],Item:{id:"minecraft:carved_pumpkin",count:1b,components:{"minecraft:custom_name":'{"text":"Crown of Time","color":"gold","italic":false}',"item_model":"game:crown","minecraft:custom_data":{star:1b},"minecraft:enchantment_glint_override":true}}}
 
 scoreboard players add @s gamemode.advancements.game_deaths 1
 scoreboard players add @s leaderboard.Deaths 1

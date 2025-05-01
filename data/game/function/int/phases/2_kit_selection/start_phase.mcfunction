@@ -44,7 +44,7 @@ scoreboard players add played_rounds gamemode.general 1
 # summon crown
 execute as @e[tag=game.map_center.item,sort=random] at @s if score @s gamemode.map_id = selected_map gamemode.settings run tag @s add temp
 
-execute as @e[tag=game.map_center.item,sort=random,limit=1,tag=temp] at @s run summon item ~ ~ ~ {Age:-32768,NoGravity:1b,Glowing:1b,Health:255,Invulnerable:1b,Tags:["star"],Item:{id:"minecraft:carved_pumpkin",count:1,components:{"minecraft:custom_name":'{"color":"gold","italic":false,"text":"Crown of Time"}',"minecraft:item_model":"game:crown/star_crown","minecraft:custom_data":{star:1b}}}}
+execute as @e[tag=game.map_center.item,sort=random,limit=1,tag=temp] at @s run summon item ~ ~ ~ {Age:-32768,NoGravity:1b,Glowing:1b,Health:255,Invulnerable:1b,Tags:["star"],Item:{id:"minecraft:carved_pumpkin",count:1,components:{"minecraft:custom_name":'{"color":"gold","italic":false,"text":"Crown of Time"}',"minecraft:item_model":"game:crown","minecraft:custom_data":{star:1b}}}}
 execute at @e[tag=star,limit=1] run summon marker ~ ~ ~ {NoGravity:1b,Invulnerable:1b,Tags:["star.death_summon"]}
 tag @e[tag=game.map_center.item] remove temp
 
